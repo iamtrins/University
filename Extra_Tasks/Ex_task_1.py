@@ -7,7 +7,7 @@ while True:
     print('Вы вышли из игры')
     break
   if not m.isdigit():
-    print('Введите число или «Выход» для звершения игры')
+    print('Введите число или «Выход» для завершения игры')
     break
   m = int(m)
   count += 1
