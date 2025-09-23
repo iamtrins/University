@@ -6,6 +6,9 @@ while True:
   if m.lower().strip() == ('выход'):
     print('Вы вышли из игры')
     break
+  if not m.isdigit():
+    print('Введите число или «Выход» для звершения игры')
+    break
   m = int(m)
   count += 1
   if n > m:
@@ -19,4 +22,4 @@ while True:
       print(f"Поздравляем, вы угадали число за {count} попытки")
     else:
       print(f"Поздравляем, вы угадали число за {count} попыток")
-    break 
+    break
